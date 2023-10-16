@@ -1,0 +1,58 @@
+﻿@model WebApplication1.Models.TBDEPARTAMENTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBDEPARTAMENTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBCOORDENADA.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBCOORDENADA.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBESTADO.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBESTADO.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBPISO.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBPISO.NOMBRE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDDEPARTM }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

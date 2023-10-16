@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WebApplication1.Models.TBENTRADA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registro de Entradas  @DateTime.Now.Day/@DateTime.Now.Month/@DateTime.Now.Year</h2>
+
+
+
+
+
+
+<div class="panel panel-default">
+
+    <div class="panel-heading">
+
+
+        <p>
+            @Html.ActionLink("Nueva Entrada", "Create", null, new { @class = "btn btn-info" })
+        </p>
+
+
+    </div>
+    <div class="panel-body">
+
+
+        @foreach (var item in Model)
+        {
+
+            <div class="" >
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <div class="thumbnail" style="background-color:deepskyblue" id="myTable">
+
+                        
+
+
+                                CEDULA:@Html.DisplayFor(modelItem => item.CEDULA)
+                            
+                            <br />
+                            NOMBRES:  @Html.DisplayFor(modelItem => item.NOMBRES)
+                            <br />
+                            APELLIDOS:  @Html.DisplayFor(modelItem => item.APELLIDOS)
+                        </div>
+                        <div class="caption">
+                            Destino:  Dpto de @Html.DisplayFor(modelItem => item.TBDEPARTAMENTO.NOMBRE)
+                            <br />
+                            Cita Previa:@Html.DisplayFor(modelItem => item.TENIACITA)
+                            <hr />
+
+                            Fecha de Entrada:  @Html.DisplayFor(modelItem => item.FECHAENTRADA)
+                            <br />
+                            Tiempo estimado: @Html.DisplayFor(modelItem => item.TiempoESTIMADO)
+                            <hr />
+                            Ocupación: @Html.DisplayFor(modelItem => item.TBOCUPACION.NOMBRE)
+                            <br />
+                            Motivo de visita: @Html.DisplayFor(modelItem => item.TBMOTIVOENTRADA.DESCRIPCION)
+                            <br />
+                            <hr />
+                            @Html.ActionLink("Editar", "Edit", new { id = item.IDENTRADA }, new { @class = "btn btn-info" })
+                            @Html.ActionLink("Ver detalle", "Details", new { id = item.IDENTRADA }, new { @class = "btn btn-info" })
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        }
+
+    </div>
+
+</div>
+
+

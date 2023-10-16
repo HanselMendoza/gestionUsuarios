@@ -1,0 +1,90 @@
+﻿@model WebApplication1.Models.TBENTRADA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBENTRADA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CEDULA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CEDULA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APELLIDOS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APELLIDOS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FECHAENTRADA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FECHAENTRADA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TiempoESTIMADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TiempoESTIMADO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TENIACITA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENIACITA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBDEPARTAMENTO.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBDEPARTAMENTO.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBMOTIVOENTRADA.DESCRIPCION)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBMOTIVOENTRADA.DESCRIPCION)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBOCUPACION.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBOCUPACION.NOMBRE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDENTRADA }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

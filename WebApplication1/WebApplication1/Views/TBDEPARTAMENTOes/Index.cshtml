@@ -1,0 +1,67 @@
+﻿@model IEnumerable<WebApplication1.Models.TBDEPARTAMENTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registros Departamentos</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo Departamento", "Create", null, new { @class = "btn btn-info" })
+
+
+
+</p>
+
+<div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Departamentos</div>
+
+    <!-- Table -->
+    <table class="table">
+
+
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DESCRIPCION)
+            </th>
+            <th>
+
+                @Html.DisplayNameFor(model => model.TBCOORDENADA.NOMBRE)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.TBPISO.NOMBRE)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOMBRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DESCRIPCION)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TBCOORDENADA.NOMBRE)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.TBPISO.NOMBRE)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.IDDEPARTM }, new { @class = "btn btn-info" })
+
+                </td>
+            </tr>
+        }
+
+    
+    </table>
+</div>

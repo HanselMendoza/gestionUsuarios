@@ -1,0 +1,161 @@
+﻿@model IEnumerable<WebApplication1.Models.TBPERSONA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Consulta  de Personas</h2>
+
+<div class="">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="https://wl-genial.cf.tsp.li/resize/728x/jpg/430/8b6/d5b863586ea38afc43920e0881.jpg" alt="...">
+            <div class="caption">
+
+                <div class="thumbnail" style="background-color:red" id="myTable">
+
+
+
+
+                </div>
+
+                <div class="thumbnail" style="background-color:red" id="myTable">
+
+
+                    Cedula:40258859667
+                </div>
+
+                Nombres: Juan Isaac
+                <br />
+                Apellidos: Thomas
+                <hr />
+                Fecha de Nacimiento:  11-09-1999
+                <br />
+                Lugar de Nacimiento: Higuey
+                <hr />
+                Es una persona Grata? NO
+                <br />
+                Estado:Vetado de humano por 5 años
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8W02HdwwjvQtQl1b2-86cJnh6td58ShJdQ&usqp=CAU" alt="...">
+                <div class="caption">
+
+                    <div class="thumbnail" style="background-color:red" id="myTable">
+
+
+
+
+                    </div>
+
+                    <div class="thumbnail" style="background-color:red" id="myTable">
+
+
+                        Cedula:02358859689
+                    </div>
+
+                    Nombres: Pedro Ramon
+                    <br />
+                    Apellidos: Santana Perez
+                    <hr />
+                    Fecha de Nacimiento:  11-11-1980
+                    <br />
+                    Lugar de Nacimiento: San Pedro Macoris
+                    <hr />
+                    Es una persona Grata? NO
+                    <br />
+                    Estado:Sin acceso al Campus Kennedy
+                </div>
+            </div>
+
+
+        </div>
+
+
+        @foreach (var item in Model)
+        {
+
+
+            <div class="">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://content.buysellads.com/hubfs/regrowth/images/guests/louis-grenier.png" alt="...">
+                        <div class="caption">
+
+                            <div class="thumbnail" style="background-color:deepskyblue" id="myTable">
+
+                            </div>
+
+                            <div class="thumbnail" style="background-color:deepskyblue" id="myTable">
+                                Cedula:@Html.DisplayFor(modelItem => item.CEDULA)
+                            </div>
+
+                            Nombres: @Html.DisplayFor(modelItem => item.NOMBRES)
+                            <br />
+                            Apellidos: @Html.DisplayFor(modelItem => item.APELLIDOS)
+                            <hr />
+                            Fecha de Nacimiento:  @Html.DisplayFor(modelItem => item.FECHANACIMIENTO)
+                            <br />
+                            Lugar de Nacimiento: @Html.DisplayFor(modelItem => item.LUGARNACIMIENTO)
+                            <hr />
+                            Es una persona Grata? @Html.DisplayFor(modelItem => item.PERSONAGRATA)
+                            <br />
+                            Estado: @Html.DisplayFor(modelItem => item.TBESTADO.NOMBRE)
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        }
+
+
+
+            <div class="">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="https://i.redd.it/hola-juanillo-este-es-mi-primer-dibujo-de-una-persona-real-v0-56ff7gel6k7b1.jpg?width=675&format=pjpg&auto=webp&s=ba620883ba1fd1e6f02858acb426508c73bc7820" alt="...">
+                        <div class="caption">
+
+                            <div class="thumbnail" style="background-color:red" id="myTable">
+
+
+
+
+                            </div>
+
+                            <div class="thumbnail" style="background-color:red" id="myTable">
+
+
+                                Cedula:02358858500
+                            </div>
+
+                            Nombres:  Ramon
+                            <br />
+                            Apellidos:  Perez
+                            <hr />
+                            Fecha de Nacimiento:  01-02-1949
+                            <br />
+                            Lugar de Nacimiento: Puerto Plata
+                            <hr />
+                            Es una persona Grata? NO
+                            <br />
+                            Estado:En proceso de Perdon
+                        </div>
+                    </div>
+
+
+                </div>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3d5b9a6cf9184e828972ffd8f92ddbb3" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBCOORDENADA" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBDEPARTAMENTO" Width="1.5" PointX="7.5" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBENTRADA" Width="1.5" PointX="9.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBESTADO" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBMOTIVOENTRADA" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBOCUPACION" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBPERSONA" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBENTRYTRAKYNGModel.TBPISO" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBCOORDEN__IDEST__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBCOORDEN__IDPIS__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBDEPARTA__IDCOO__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBDEPARTA__IDEST__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBDEPARTA__IDPIS__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBENTRADA__IDDEP__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBENTRADA__IDMOT__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBENTRADA__IDOCU__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBMOTIVOE__IDEST__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBOCUPACI__IDEST__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBPERSONA__IDEST__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="DBENTRYTRAKYNGModel.FK__TBPISO__IDESTADO__267ABA7A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
